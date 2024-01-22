@@ -21,9 +21,9 @@
     my_string = my_string.translate(table) 
     ```
 - `startswidth()`, `endswidth()` 
-    - 그냥 `my_string[0]`, `my_string[-1]` 로 접근해서 봐도 되는데 위 문제에서 문자열이 공백일 때를 생각 안해서 오류 났었음.. 대안이 있다는 것만 알아두자.
+    - 그냥 `string[0]`, `string[-1]` 로 접근해도 되는데 위 문제에서 문자열이 공백일 때를 생각 안해서 오류 났었음.. 대안이 있다는 것만 알아두자.
 - `string`은 `append`말고 `+=`
-- `isalpha()`, `isdigit()` 
+- `string.isalpha()`, `string.isdigit()` : 문자 하나 or 문자열에 적용 가능
 
 ### 신고 결과 받기
 - 리스트 내에서 중복 제거하고 사용하려면 `set()` 쓰자
