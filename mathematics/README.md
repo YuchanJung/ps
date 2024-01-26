@@ -19,3 +19,9 @@
             k //= n
         return s[::-1]
     ```
+
+### 주차 요금 계산
+- 딕셔너리 key 기준으로 정렬 : `dict(sorted(d.items()))`
+    - `sorted(d)` - key만 추출하여 정렬함
+    - value 기준 정렬 : `dict(sorted(d.items(), key=lambda x:x[1]))`
+- `dict.keys()`, `dict.values()` - dict_keys, dict_values 객체를 반환함. (리스트와는 다름)
