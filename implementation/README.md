@@ -1,5 +1,13 @@
 # 오답노트
 
+## C++
+---
+### 뱀
+- head, tail -> deque 이용
+
+
+## Python
+---
 ### 실패율
 - 리스트 `count`
 - 정렬 `sort`, `sorted`, `key=lambda x:value`
