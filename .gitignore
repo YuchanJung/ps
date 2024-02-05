@@ -1,3 +1,7 @@
 .DS_store
+.vscode
 etc/
 wa/
+tmp
+tmp.cpp
+tmp.py
