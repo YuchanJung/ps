@@ -1,13 +1,15 @@
 # 오답노트
 
 ## C++
----
-### 뱀
-- head, tail -> deque 이용
 
+### 뱀
+- head, tail -> `deque` 이용
+
+### 경사로
+- `memset(array, 0, sizeof(int) * length)` -> `cstring` 헤더파일 필요함
 
 ## Python
----
+
 ### 실패율
 - 리스트 `count`
 - 정렬 `sort`, `sorted`, `key=lambda x:value`

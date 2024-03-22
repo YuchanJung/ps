@@ -1,13 +1,12 @@
 # 오답노트
 ## C++
----
+
 ### 숫자 문자열과 영단어
 - `#include <regex>`
     - `regex_replace(str, A, B)` - str에서 A를 B로 바꿈. A는 정규표현식이 옴
 
 
 ## Python
----
 
 ### 숫자 문자열과 영단어
 - 시간 복잡도 생각 안할거면 `replace()` 사용하자 (`a.replace()` 하면 변환한 문자열 반환. `a`를 바꾸진 않음)
