@@ -25,7 +25,7 @@ int main() {
                 temp += st.top();
                 st.pop();
             }
-            if (st.empty()) break;
+            if (st.empty() || temp < 0) break;
 
             st.pop();
             if (temp == 0) temp++;
@@ -37,7 +37,7 @@ int main() {
                 temp += st.top();
                 st.pop();
             }
-            if (st.empty()) break;
+            if (st.empty() || temp < 0) break;
             
             st.pop();
             if (temp == 0) temp++;
