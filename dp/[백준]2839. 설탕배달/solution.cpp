@@ -26,9 +26,10 @@ int main() {
 
 using namespace std;
 
+int n;
+int arr[5001];
+
 int main() {
-    int n;
-    int arr[5001];
     cin >> n;
     arr[1] = arr[2] = arr[4] = -1;
     arr[3] = arr[5] = 1;
