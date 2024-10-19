@@ -1,3 +1,24 @@
+// lower_bound()
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int n, x, res;
+vector<int> v = {0};
+
+int main() {
+    ios::sync_with_stdio(false); cin.tie(nullptr);
+    cin >> n;
+    while (n--) {
+        cin >> x;
+        int u = lower_bound(v.begin(), v.end(), x) - v.begin();
+        if (u > v.size() - 1) v.push_back(x);
+        else v[u] = x;
+    }
+    cout << v.size() - 1;
+}
+
+// lower_bound code
 #include <iostream>
 #include <vector>
 

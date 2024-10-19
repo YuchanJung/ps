@@ -1,3 +1,47 @@
+// new version
+#include <bits/stdc++.h>
+#define INF 2000000000
+
+using namespace std;
+
+int n, x, r;
+int arr[1000001], pre[1000001];
+vector<int> v = {-INF};
+vector<int> res;
+
+int main() {
+    ios::sync_with_stdio(false); cin.tie(nullptr);
+    cin >> n;
+    for (int i = 1; i <= n; i++)
+        cin >> arr[i];
+    
+    for (int i = 1; i <= n ; i++) {
+        int k = arr[i];
+        int u = lower_bound(v.begin(), v.end(), k) - v.begin();
+        if (u == v.size()) {
+            pre[i] = v.back();
+            v.push_back(k);
+        }
+        else {
+            pre[i] = v[u - 1];
+            v[u] = k;
+        }
+    }
+
+    r = v.size() - 1;
+    int k = v[r];
+    for (int i = n; i >= 1; i--) {
+        if (arr[i] == k) {
+            res.push_back(k);
+            k = pre[i];
+        }
+    }
+    cout << r << '\n';
+    for (int i = r - 1; i >= 0; i--)
+        cout << res[i] << ' ';
+}
+
+// old version
 #include <iostream>
 #include <vector>
 
