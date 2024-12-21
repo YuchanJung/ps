@@ -9,7 +9,7 @@ int main() {
 
     for (int i = 0; i < n; i++) {
         cin >> s;
-        if (s > 10000) continue; // for문 내에서 동시에 처리 가능
+        if (s > 10000) continue;
         arr[s] += 1;
         for (int j = s + 1; j <= 10000; j++) {
             arr[j] += arr[j - s];
