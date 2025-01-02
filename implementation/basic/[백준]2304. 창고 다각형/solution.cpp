@@ -25,7 +25,7 @@ int main() {
         if (arr[i] < arr[i + 1])
             arr[i] = arr[i + 1];
     }
-    for (int i = 0; i <= 1000; i++) res += arr[i];
 
+    for (int i = 0; i <= 1000; i++) res += arr[i];
     cout << res;
 }
