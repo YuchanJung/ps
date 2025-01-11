@@ -4,7 +4,6 @@ using namespace std;
 
 int h, w, res;
 int blocks[500];
-int k;
 
 int main() {
     cin >> h >> w;
@@ -22,7 +21,6 @@ int main() {
                 start = j;
             }
         }
-        // cout << res << '\n';
     }
     cout << res;
 }
